@@ -8,11 +8,12 @@
 
 ## <a id="general-info">⭐ General info</a>
 
-<!-- A clean and responsive business blog card built using **HTML** and **CSS**. -->
+The Simple Feature Section webpage presents a clean, responsive layout showcasing three key product features for a SaaS platform.
+It's a great example of a modular, user-friendly feature section built with **HTML** and **CSS**.
 
 ## <a id="Preview">🖼️ Preview</a>
 
-<!-- <a style="font-size: 24px">https://alexandrlebedenko.github.io/Business-Blog-Card/</a> -->
+<a style="font-size: 24px">https://alexandrlebedenko.github.io/Simple-Feature-Section/</a>
 
 ## <a id="technologies">🛠️ Technologies</a>
 
