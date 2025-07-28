@@ -1,0 +1,273 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+input[type=file] {
+  max-width: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100%;
+  font-family: "Outfit", sans-serif;
+  padding: 3rem 1.5rem;
+  background-color: #121826;
+  background-image: url(../img/Background_image.svg);
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9da3ae;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #e5e7eb;
+  max-width: 35%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card-row__item {
+  max-width: 19.75rem;
+  padding: 1.5rem;
+  margin-right: 3rem;
+  border-radius: 1rem;
+  background-color: #212936;
+  -webkit-box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+          box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+}
+.card-row__item:last-child {
+  margin: 0;
+}
+.card-row__item:nth-child(1) .card__icon {
+  background-color: #fceed8;
+}
+.card-row__item:nth-child(2) .card__icon {
+  background-color: #dee9fc;
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+.card-row__item:nth-child(3) .card__icon {
+  background-color: #fbe5e6;
+}
+
+.card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 3.25rem;
+  max-height: 3.25rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #fceed8;
+}
+.card__title {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+.card__text {
+  max-width: 90%;
+  margin-bottom: 1rem;
+  color: #d2d5da;
+}
+.card__img {
+  border-radius: 1rem;
+}
+
+@media (min-width: 1093px) and (max-width: 1169px) {
+  .title {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1029px) and (max-width: 1092px) {
+  .title {
+    max-width: 40%;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .card:first-child {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 921px) and (max-width: 1029px) {
+  .title {
+    max-width: 45%;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .card:first-child {
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 833px) and (max-width: 920px) {
+  .title {
+    max-width: 50%;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+  .card:first-child {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 832px) {
+  .wrapper {
+    padding: 3rem 0.75rem;
+  }
+  .title {
+    max-width: 100%;
+  }
+  .card-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .card {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+  .card:first-child {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}
